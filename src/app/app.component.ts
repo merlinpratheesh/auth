@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { auth } from 'firebaseui';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'auth';
+
+  constructor(public afAuth: AngularFireAuth,) {
+console.log(afAuth);
+console.log('auth',auth);
+console.log('AngularFireAuth',AngularFireAuth);
+
+
+  }
 }
