@@ -1,20 +1,22 @@
-import { Component } from '@angular/core';
-import { AngularFireAuth } from '@angular/fire/auth';
-import { auth } from 'firebaseui';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'auth';
+export class AppComponent implements OnInit {
+  title = 'angular-one-tap-signin';
+  token: string;
 
-  constructor(public afAuth: AngularFireAuth,) {
-console.log(afAuth);
-console.log('auth',auth);
-console.log('AngularFireAuth',AngularFireAuth);
-
+  constructor() {
 
   }
+
+  ngOnInit() {
+    this.token = localStorage.getItem("accessToken");
+    console.log(this.token);
+    
+  }
+
 }
