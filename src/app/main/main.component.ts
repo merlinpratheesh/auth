@@ -34,4 +34,5 @@ export class MainComponent implements OnInit {
   uiShownCallback() {
     console.log('UI shown');
   }
+  
 }

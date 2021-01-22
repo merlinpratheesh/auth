@@ -23,4 +23,5 @@ export class SecondPageComponent implements OnInit {
   successCallback(data: FirebaseUISignInSuccessWithAuthResult) {
     console.log(data);
   }
+  
 }
