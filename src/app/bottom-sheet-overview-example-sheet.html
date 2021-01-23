@@ -1,0 +1,39 @@
+<mat-card class="list" class="size" fxLayout="row wrap" fxLayout.lt-sm="column"
+    fxLayoutAlign="space-around center">
+    <mat-card-content class="empty-label">
+        <form [formGroup]="myprojectControls?.addProfileDetails" fxLayout="row wrap" fxLayoutAlign="center center">
+            <mat-form-field appearance="fill" floatLabel="Edit Sub-Heading">
+                <mat-label>Update DisplayName</mat-label>
+                <input matInput placeholder="Sub-Heading" formControlName="profilenameControl">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" floatLabel="Edit Sub-Heading">
+                <mat-label>Upadate Photo</mat-label>
+                <input matInput placeholder="Sub-Heading" formControlName="photourlControl">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" floatLabel="Edit Sub-Heading">
+                <mat-label>Upadate Email</mat-label>
+                <input matInput placeholder="Sub-Heading" formControlName="email_savedControl">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" floatLabel="Edit Sub-Heading">
+                <mat-label>Update gender</mat-label>
+                <input matInput placeholder="Sub-Heading" formControlName="genderControl">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" floatLabel="Edit Sub-Heading">
+                <mat-label>Update areasOfInterest</mat-label>
+                <input matInput placeholder="Sub-Heading" formControlName="areasOfInterestControl">
+            </mat-form-field>
+
+            <mat-form-field appearance="fill" floatLabel="Edit Sub-Heading">
+                <mat-label>Update skills</mat-label>
+                <input matInput placeholder="Sub-Heading" formControlName="skillsControl">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="UpdateUserProfile()">Update</button>
+    </mat-card-actions>
+</mat-card>
